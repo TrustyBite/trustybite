@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# TrustyBite: Revolutionizing Food Safety and Hygiene
 
-## Getting Started
+## Overview
+**TrustyBite** is a pioneering platform that leverages blockchain technology, specifically the NEAR Blockchain, to ensure food freshness and hygiene in dining establishments. Our solution provides diners with verifiable, immutable data about a restaurant's adherence to hygiene standards, utilizing IoT devices for real-time monitoring.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Envisioned Potential and Usage of TrustyBite
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Public Health Impact
+TrustyBite could significantly reduce foodborne illnesses by setting a new industry standard for hygiene. This transparency could lead to improved health across communities, influencing local health departments to integrate TrustyBite data into their oversight processes.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Insurance and Compliance
+Restaurants with high TrustyBite ratings could benefit from lower insurance premiums due to proven adherence to hygiene standards. Additionally, compliance with health regulations could be streamlined, reducing the cost and time of inspections.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Customer Loyalty and Marketing
+For consumers, TrustyBite could become a go-to tool for dining decisions, potentially increasing loyalty for restaurants with consistent high ratings. Restaurants might use their TrustyBite scores in marketing, highlighting their commitment to quality and hygiene.
 
-## Learn More
+### Educational Tool
+As a platform, TrustyBite could educate both consumers and chefs on hygiene best practices, potentially integrating educational content or certifications within the app.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Future Directions
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Public Health Collaborations**: Partner with health departments to integrate TrustyBite data into regulatory processes.
+- **Consumer Awareness**: Drive customer engagement by promoting TrustyBite ratings in restaurants.
+- **Educational Content**: Provide hygiene best practices and certifications.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Technology Stack
+- **Blockchain**: NEAR Protocol https://github.com/near
+- **Real-time Monitoring**: IoT-enabled sensors 
+- **Frontend Framework**: Next.js with JSX for component-based architecture
+- **Backend**: Node.js
+- **Hardware**: Raspberry Pi and Arduino for IoT and sensor integration
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
+
+## Supporting Repositories
+
+TrustyBite is a multi-faceted platform, with separate repositories dedicated to different components of the ecosystem. Below are links to the repositories for the Smart Contract logic and IoT device integration.
+
+### [TrustyBite Smart Contracts](https://github.com/TrustyBite/TrustyBite-SmartContract)
+This repository contains all the smart contract logic powering TrustyBite, deployed on the NEAR blockchain. The smart contracts manage the immutable data storage for hygiene standards and ratings, ensuring transparent and verifiable information for end-users. All contract updates, logic handling, and NEAR Protocol interactions are centralized here.
+
+### [TrustyBite DEPIN Integration](https://github.com/TrustyBite/TrustyBite-DEPIN)
+The IoT integration repository includes code to configure and manage **Raspberry Pi** and **Arduino** devices. This code handles data collection from sensors, processes freshness and hygiene metrics, and transmits verified data to the TrustyBite smart contracts. Through this integration, TrustyBite can maintain real-time data on food safety and cleanliness, enabling a robust, blockchain-powered hygiene monitoring system.
+
+---
+
+These repositories work together with the main TrustyBite platform to deliver a seamless, data-driven solution for food safety.
