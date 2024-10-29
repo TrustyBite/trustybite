@@ -19,6 +19,7 @@ export default function OwnerIpad() {
         initial={{ x: -600 }}
         transition={{ duration: 0.6 }}
         whileInView={{ x: 0 }}
+        className="flex-1"
       >
         <p
           className={`${SatoshiFont.className} text-black font-bold text-[3.8vw]`}
@@ -76,19 +77,22 @@ export default function OwnerIpad() {
           <br /> and hygiene with SafeBite certification.
         </p>
       </motion.div>
-      <motion.div
-        initial={{ x: 400 }}
-        transition={{ duration: 0.6 }}
-        whileInView={{ x: 0 }}
-      >
-        <Image
-          className="w-[40vw]"
-          src={ownerIpad}
-          width={0}
-          height={0}
-          alt="ownerIpad"
-        />
-      </motion.div>
+      <div className="overflow-hidden">
+        <motion.div
+          initial={{ x: 400 }}
+          transition={{ duration: 0.6 }}
+          whileInView={{ x: 0 }}
+          className="[clip-path:inset(0px_0px_0px_0px)]"
+        >
+          <Image
+            className="w-[40vw]"
+            src={ownerIpad}
+            width={0}
+            height={0}
+            alt="ownerIpad"
+          />
+        </motion.div>
+      </div>
     </div>
   );
 }

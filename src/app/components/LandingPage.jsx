@@ -33,6 +33,7 @@ export default function LandingPage() {
           height={0}
           alt="dining"
         />
+        <p className={`${SatoshiFont.className} text-center text-[2vw] text-[#626262] my-[2vw]`}>Hidden risks in restaurant hygiene and freshness affect millions each year.</p>
         <Cards />
       </div>
       <Tablette />
