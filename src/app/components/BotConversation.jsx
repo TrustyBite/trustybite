@@ -29,7 +29,7 @@ export default function BotConversation() {
         />
         <div className="absolute top-0">
           <motion.div
-            initial={{ scale: 0.3, transition: { duration: .4 } }}
+            initial={{ scale: 0.3, transition: { duration: 1 } }}
             className="mx-[8vw] my-[10vw]"
             whileInView={{ scale: 1}}
           >
@@ -54,7 +54,7 @@ export default function BotConversation() {
         </div>
         <motion.div
           initial={{ y: 400 }}
-          whileInView={{ y: 0, transition: { duration: .4 } }}
+          whileInView={{ y: 0, transition: { duration: 1 } }}
           className="absolute mr-[2vw] bottom-0 right-[1.5%]"
           viewport={{ once: true }}
         >

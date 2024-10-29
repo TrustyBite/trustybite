@@ -83,7 +83,7 @@ export default function Testimonials() {
       //   backgroundImage:  `url(${testimonials[CenterId].src.src})`,
       transition: {
         type: "spring",
-        duration: 1,
+        duration: 1.2,
       },
     },
     left: {
@@ -95,7 +95,7 @@ export default function Testimonials() {
       zIndex: "4",
       transition: {
         type: "spring",
-        duration: 1,
+        duration: 1.2,
       },
     },
     right: {
@@ -107,7 +107,7 @@ export default function Testimonials() {
       zIndex: "3",
       transition: {
         type: "spring",
-        duration: 1,
+        duration: 1.2,
       },
     },
     rightHidden: {
@@ -135,7 +135,7 @@ export default function Testimonials() {
           Trusted by Diners and Restaurants Alike
         </p>
       </div>
-      <div className="flex relative h-[20vw] mt-[5vw] overflow-hidden">
+      <div className="flex relative h-[22vw] mt-[5vw] overflow-hidden">
         <AnimatePresence initial={false}>
           <motion.div
             key={LeftId}

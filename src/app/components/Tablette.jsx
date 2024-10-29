@@ -25,7 +25,7 @@ export default function Tablette() {
         </div>
         <motion.div
           initial={{ scale: .3 }}
-          whileInView={{ scale: 1, transition: { duration: .4 } }}
+          whileInView={{ scale: 1, transition: { duration: 1 } }}
           viewport={{ once: true }}
         >
           <Image

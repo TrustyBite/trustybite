@@ -17,7 +17,7 @@ export default function OwnerIpad() {
     <div className="mx-[6.5%] flex justify-between">
       <motion.div
         initial={{ x: -600 }}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 1.2 }}
         whileInView={{ x: 0 }}
         className="flex-1"
       >
@@ -80,7 +80,7 @@ export default function OwnerIpad() {
       <div className="overflow-hidden">
         <motion.div
           initial={{ x: 400 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 1.2 }}
           whileInView={{ x: 0 }}
           className="[clip-path:inset(0px_0px_0px_0px)]"
         >

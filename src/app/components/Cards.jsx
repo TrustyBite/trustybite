@@ -62,7 +62,7 @@ export default function Cards() {
             <motion.div
               key={idx}
               style={{ opacity, scale }}
-              className="p-[2vw] my-2 w-[40vw] sticky top-1/3 bg-gradient-to-b drop-shadow-2xl from-white to-[#DCEEFF] rounded-2xl"
+              className="p-[2vw] mt-[8vw] w-[40vw] sticky top-0 bg-gradient-to-b drop-shadow-2xl from-white to-[#DCEEFF] rounded-2xl"
             >
               <div className="flex items-center gap-[3vw] my-2">
                 <Image
