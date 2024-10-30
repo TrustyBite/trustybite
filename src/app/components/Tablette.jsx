@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import tablette from "@/app/assets/tablette.png";
+import tablette from "@/app/assets/tablette.svg";
 import {
   motion,
   useScroll,
