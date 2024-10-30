@@ -1,16 +1,14 @@
 import Image from "next/image";
 import React from "react";
 import restoSvg from "@/app/assets/restoSvg.svg";
-import freshnesssvg from "@/app/assets/freshnesssvg.svg";
-import cleanlinesssvg from "@/app/assets/cleanlinesssvg.svg";
-import ratingsvg from "@/app/assets/ratingsvg.svg";
+
 import nearSmall from "@/app/assets/nearSmall.svg";
-import calendar from "@/app/assets/calendar.svg";
-import clock from "@/app/assets/clock.svg";
-import usersvg from "@/app/assets/usersvg.svg";
+
 import anotherCertified from "@/app/assets/anotherCertified.png";
 import { SatoshiFont } from "@/app/fonts/SatoshiFont";
-import { ChevronDownIcon } from "@heroicons/react/24/outline";
+import ReviewsSection from "@/app/components/home/ReviewsSection";
+import Rating from "@/app/components/home/Rating";
+import MakeReservation from "@/app/components/home/MakeReservation";
 
 export default function RestaurantId() {
   return (
@@ -27,155 +25,8 @@ export default function RestaurantId() {
             />
           </div>
           <div className=" col-span-3 flex flex-col">
-            <div className="bg-white drop-shadow-xl border border-[#DDDDDD] px-[2.5vw] py-[2vw] rounded-[1vw]">
-              <p
-                className={`${SatoshiFont.className} text-black text-[2vw] font-bold text-center`}
-              >
-                Ratings & Health Data
-              </p>
-              <div className="flex justify-between my-[1vw]">
-                <div className="p-[1vw] border border-[#DDDDDD] rounded-[1vw]">
-                  <p
-                    className={`${SatoshiFont.className} text-center text-black font-bold text-[2.5vw]`}
-                  >
-                    9.3
-                  </p>
-                  <div className="flex items-center justify-center">
-                    <Image
-                      className="w-[1.5vw] mr-[0.2vw]"
-                      src={freshnesssvg}
-                      width={0}
-                      height={0}
-                      alt="freshness svg"
-                    />
-                    <span
-                      className={`${SatoshiFont.className} text-black font-medium text-[1vw]`}
-                    >
-                      Freshness
-                    </span>
-                  </div>
-                </div>
-                <div className="p-[1vw] border border-[#DDDDDD] rounded-[1vw]">
-                  <p
-                    className={`${SatoshiFont.className} text-center text-black font-bold text-[2.5vw]`}
-                  >
-                    9.1
-                  </p>
-                  <div className="flex items-center justify-center">
-                    <Image
-                      className="w-[1.5vw] mr-[0.2vw]"
-                      src={cleanlinesssvg}
-                      width={0}
-                      height={0}
-                      alt="freshness svg"
-                    />
-                    <span
-                      className={`${SatoshiFont.className} text-black font-medium text-[1vw]`}
-                    >
-                      Cleanliness
-                    </span>
-                  </div>
-                </div>
-                <div className="p-[1vw] border border-[#DDDDDD] rounded-[1vw]">
-                  <p
-                    className={`${SatoshiFont.className} text-center text-black font-bold text-[2.5vw]`}
-                  >
-                    4.7/5
-                  </p>
-                  <div className="flex items-center justify-center">
-                    <Image
-                      className="w-[1.5vw] mr-[0.2vw]"
-                      src={ratingsvg}
-                      width={0}
-                      height={0}
-                      alt="freshness svg"
-                    />
-                    <span
-                      className={`${SatoshiFont.className} text-black font-medium text-[1vw]`}
-                    >
-                      Rating
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div className="flex justify-center">
-                <p
-                  className={`${SatoshiFont.className} text-black font-medium flex text-[1vw]`}
-                >
-                  All data verified and stored on the{" "}
-                  <Image
-                    className="w-[3vw] mx-[0.2vw]"
-                    src={nearSmall}
-                    width={0}
-                    height={0}
-                    alt="near small"
-                  />
-                  Blockchain
-                </p>
-              </div>
-            </div>
-            <div className="bg-white mt-[2vw] drop-shadow-xl border border-[#DDDDDD] px-[2.5vw] py-[2vw] rounded-[1vw]">
-              <p
-                className={`${SatoshiFont.className} text-black text-[2vw] font-bold text-center`}
-              >
-                Make a reservation
-              </p>
-              <div className="mt-[1vw]">
-                <div className="rounded-full my-[1vw] border border-[#DDDDDD] bg-white flex items-center p-[1vw] ">
-                  <Image
-                    className="mr-[1vw] w-[1.5vw]"
-                    src={calendar}
-                    height={0}
-                    width={0}
-                    alt="calendar"
-                  />
-                  <p
-                    className={`${SatoshiFont.className} text-[1.2vw] text-black font-medium`}
-                  >
-                    03 Nov 24
-                  </p>
-                </div>
-                <div className="rounded-full my-[1vw] border border-[#DDDDDD] bg-white flex items-center justify-between p-[1vw]">
-                  <div className="flex">
-                    <Image
-                      className="mr-[1vw] w-[1.5vw]"
-                      src={clock}
-                      height={0}
-                      width={0}
-                      alt="clock"
-                    />
-                    <p
-                      className={`${SatoshiFont.className} text-[1.2vw] text-black font-medium`}
-                    >
-                      10 pm
-                    </p>
-                  </div>
-                  <ChevronDownIcon className="w-4 ml-[1vw]" />
-                </div>
-                <div className="rounded-full my-[1vw] border border-[#DDDDDD] bg-white flex justify-between items-center p-[1vw]">
-                  <div className="flex">
-                    <Image
-                      className="mr-[1vw] w-[1.5vw]"
-                      src={usersvg}
-                      height={0}
-                      width={0}
-                      alt="usersvg"
-                    />
-                    <p
-                      className={`${SatoshiFont.className} text-[1.2vw] text-black font-medium`}
-                    >
-                      2 People
-                    </p>
-                  </div>
-                  <ChevronDownIcon className="w-4 ml-[1vw]" />
-                </div>
-                <button
-                  className={`${SatoshiFont.className} text-white rounded-[1vw] bg-[#01B7E6] p-[1.5vw] text-[1.2vw] w-full`}
-                >
-                  Book
-                </button>
-              </div>
-            </div>
+            <Rating />
+            <MakeReservation />
           </div>
         </div>
         <div className="mt-[1.5vw] grid grid-cols-8 gap-[2vw]">
@@ -185,7 +36,9 @@ export default function RestaurantId() {
             >
               Veggie Haven, San Francisco, CA
             </p>
-            <p className={`${SatoshiFont.className} text-black text-[1.2vw]`}>
+            <p
+              className={`${SatoshiFont.className} text-black text-[1.2vw] mt-[1vw]`}
+            >
               Veggie Haven, a beacon of plant-based dining in San Francisco,
               offers an eco-conscious menu that celebrates fresh, local
               ingredients. With dishes that range from globally-inspired to
@@ -218,6 +71,44 @@ export default function RestaurantId() {
             </div>
           </div>
         </div>
+        <div className="my-[2.5vw] flex justify-between items-center">
+          <div className="flex items-center">
+            <p
+              className={`${SatoshiFont.className} text-black font-bold text-[4vw] mr-[1vw]`}
+            >
+              4.7
+            </p>
+            <div>
+              <p className={`${SatoshiFont.className} text-black font-bold`}>
+                Very good
+              </p>
+              <p className={`${SatoshiFont.className} text-black `}>
+                371 verified reviews
+              </p>
+            </div>
+          </div>
+          <div className="flex justify-center">
+            <p
+              className={`${SatoshiFont.className} text-black font-medium flex text-[1vw]`}
+            >
+              All data verified and stored on the{" "}
+              <Image
+                className="w-[3vw] mx-[0.2vw]"
+                src={nearSmall}
+                width={0}
+                height={0}
+                alt="near small"
+              />
+              Blockchain
+            </p>
+          </div>
+          <button
+            className={`${SatoshiFont.className} text-white rounded-[0.3vw] bg-[#01B7E6] p-[0.5vw] text-[1.2vw] w-[12vw]`}
+          >
+            Leave a review
+          </button>
+        </div>
+        <ReviewsSection />
       </div>
     </div>
   );
