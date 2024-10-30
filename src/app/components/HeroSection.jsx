@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+
 import { SatoshiFont } from "../fonts/SatoshiFont";
 import Header from "./Header";
 import Image from "next/image";
@@ -6,7 +7,9 @@ import { ArrowTurnDownRightIcon } from "@heroicons/react/24/outline";
 import happyfamily1 from "@/app/assets/Happy-family-faces-1.png";
 import nearLogo from "@/app/assets/nearLogo.svg";
 
+
 export default function HeroSection() {
+ 
   return (
     <div className="w-full">
       <Image

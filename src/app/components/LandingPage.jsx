@@ -12,6 +12,7 @@ import OwnerIpad from "./OwnerIpad";
 import Testimonials from "./Testimonials";
 import { ArrowTurnDownRightIcon } from "@heroicons/react/24/outline";
 
+
 export default function LandingPage() {
   return (
     <>
@@ -94,8 +95,11 @@ export default function LandingPage() {
         </div>
       </div>
       <div className="mx-[6.5%]">
-        <p className={`${SatoshiFont.className} mt-[2vw] text-[1vw] text-black`}>
-          © <span className="font-bold">TrustyBite</span> 2024 I All rights reserved
+        <p
+          className={`${SatoshiFont.className} mt-[2vw] text-[1vw] text-black`}
+        >
+          © <span className="font-bold">TrustyBite</span> 2024 I All rights
+          reserved
         </p>
       </div>
     </>
