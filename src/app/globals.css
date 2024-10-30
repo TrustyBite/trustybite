@@ -1,9 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "leaflet/dist/leaflet.css";
 
-body {
-    /* background-image: url("./assets/Happy-family.png");
-    background-repeat: no-repeat; */
-    /* background-size: cover; */
+#map {
+    width: 100%;
+    height: 180px;
 }

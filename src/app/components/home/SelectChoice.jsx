@@ -50,8 +50,8 @@ export default function SelectChoice() {
           </button>
         </div>
       </div>
-      <Restaurants choice={activeTab === "Cards"} />
-      <Graph choice={activeTab === "Cards"} />
+      {activeTab === "Cards" && <Restaurants />}
+      {activeTab === "Map" && <Graph />}
     </>
   );
 }

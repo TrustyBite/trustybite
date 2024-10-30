@@ -11,10 +11,26 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 export default function Cards() {
   const cards = [
-    { src: freshness, title: "Freshness Monitoring" },
-    { src: hygiene, title: "Hygiene Scoring" },
-    { src: secure, title: "Secure Data Storage" },
-    { src: inApp, title: "In App Booking" },
+    {
+      src: freshness,
+      title: "Freshness Monitoring",
+      text: "Our advanced freshness monitoring system keeps food quality high by tracking real-time conditions like temperature and acidity levels. TrustyBite ensures that every meal meets top freshness standards, so diners can always enjoy peak flavor and safety.",
+    },
+    {
+      src: hygiene,
+      title: "Hygiene Scoring",
+      text: "TrustyBite’s hygiene scoring is transparent and secure, using AI to assess cleanliness and safety in real time. With blockchain-backed scores, diners know the hygiene practices of each restaurant they choose.",
+    },
+    {
+      src: secure,
+      title: "Secure Data Storage",
+      text: "Data you can trust. TrustyBite uses NEAR Blockchain to securely store freshness and hygiene metrics, protecting information integrity. Our technology provides transparency for diners who value food safety.",
+    },
+    {
+      src: inApp,
+      title: "In App Booking",
+      text: "Conveniently reserve your table with TrustyBite’s in-app booking feature. See hygiene and freshness scores, then book directly through the app for a safe, trusted dining experience each time.",
+    },
   ];
 
   const containerRef = useRef(null);
@@ -81,10 +97,7 @@ export default function Cards() {
               <div
                 className={`${SatoshiFont.className} text-[1.2vw] font-bold`}
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Obcaecati exercitationem ut delectus accusantium voluptates
-                nesciunt molestiae expedita! Fuga, placeat incidunt corrupti hic
-                cupiditate mollitia a magni laborum sed nihil dignissimos?
+                { card.text }
               </div>
             </motion.div>
           );

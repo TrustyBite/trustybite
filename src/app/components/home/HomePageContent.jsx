@@ -6,7 +6,7 @@ import SelectChoice from "@/app/components/home/SelectChoice";
 export default function HomePageContent() {
   
   return (
-    <div className=" bg-[#FAFAFA]">
+    <div className="">
       <div className="mx-[6.5%]">
         <Search />
         <SelectChoice/>
