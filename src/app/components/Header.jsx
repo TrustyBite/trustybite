@@ -13,14 +13,6 @@ export default function Header() {
   const { signedAccountId, wallet } = useContext(NearContext);
   const [isSignedIn, setIsSignedIn] = useState(false);
 
-  function handleLogin() {
-    if (!isSignedIn) {
-      wallet.signIn();
-    } else {
-      wallet.signOut();
-    }
-  }
-
   useEffect(() => {
     console.log("wallet", wallet);
     if (1) {
@@ -53,7 +45,7 @@ export default function Header() {
         />
       </div>
       <Link href={'/home'}>
-        <div className="" onClick={handleLogin}>
+        <div className="">
           <button
             className={`w-[11vw] h-[3.5vw] text-[1.25vw] p-[0.3vw] text-[#4C4C4C] ${SatoshiFont.className} font-bold flex items-center gap-2 bg-[#6BE1FF] rounded-[1vw] shadow-inner`}
             style={{

@@ -1,0 +1,34 @@
+{
+  "name": "@near-relay/server",
+  "version": "0.1.6",
+  "description": "Meta transaction tooling for NEAR",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "files": [
+    "dist/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@near-js/accounts": "1.0.4",
+    "@near-js/crypto": "1.2.1",
+    "@near-js/keystores": "0.0.9",
+    "@near-js/signers": "0.1.1",
+    "@near-js/transactions": "1.1.2",
+    "borsh": "2.0.0",
+    "cors": "2.8.5",
+    "dotenv": "^16.4.5",
+    "near-api-js": "3.0.4"
+  },
+  "devDependencies": {
+    "@types/bn.js": "^5.1.5",
+    "@types/node": "^20.8.10",
+    "typescript": "^5.2.2"
+  }
+}
