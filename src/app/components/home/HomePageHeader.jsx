@@ -13,6 +13,7 @@ export default function HomePageHeader() {
         <Link href={"/"}>
           <div className="cursor-pointer">
             <Image
+            draggable={false}
               className="w-[10vw]"
               src={homelogo}
               width={0}
@@ -32,6 +33,7 @@ export default function HomePageHeader() {
           </div>
           <div>
             <Image
+            draggable={false}
               className="w-[3vw]"
               src={profile}
               width={0}

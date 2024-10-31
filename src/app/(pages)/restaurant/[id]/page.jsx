@@ -88,6 +88,7 @@ export default function RestaurantId() {
         <div className="grid grid-cols-8 gap-[2vw]">
           <div className="col-span-5">
             <Image
+            draggable={false}
               className="w-full h-full object-cover rounded-[1vw] drop-shadow-xl"
               src={restoSvg}
               width={0}
@@ -122,6 +123,7 @@ export default function RestaurantId() {
           <div className="col-span-3 bg-white border border-[#DDDDDD] px-[2.5vw] py-[2vw] rounded-[1vw]">
             <div className="flex items-center">
               <Image
+              draggable={false}
                 className="drop-shadow-xl w-[8vw] mr-[1vw]"
                 src={anotherCertified}
                 width={0}
@@ -164,6 +166,7 @@ export default function RestaurantId() {
             >
               All data verified and stored on the{" "}
               <Image
+              draggable={false}
                 className="w-[3vw] mx-[0.2vw]"
                 src={nearSmall}
                 width={0}
@@ -185,6 +188,7 @@ export default function RestaurantId() {
             <div className="my-[1vw] p-[1vw] flex gap-[1vw] items-center rounded-[1vw] borde-b border-[#AAAAAA] bg-[#F2F2F2]">
               <div className="self-start mt-[0.5vw]">
                 <Image
+                draggable={false}
                   className="w-[3vw]"
                   src={profile1}
                   width={0}

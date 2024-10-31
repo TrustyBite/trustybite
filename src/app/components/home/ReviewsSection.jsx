@@ -25,7 +25,7 @@ export default function ReviewsSection({ reviews, rating }) {
           className="border-t border-[#112211]/25 flex justify-between py-[1vw]"
         >
           <div className="flex items-center">
-            <Image className="w-[3vw]" src={profile1} width={0} height={0} alt="reviewIcon1" />
+            <Image draggable={false} className="w-[3vw]" src={profile1} width={0} height={0} alt="reviewIcon1" />
             <div className="px-[1.5vw]">
               <p className={`${SatoshiFont.className} text-[#112211]`}>
                 {review.reviewer} |{" "}

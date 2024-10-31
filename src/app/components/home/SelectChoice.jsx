@@ -52,6 +52,7 @@ export default function SelectChoice() {
             className={`w-1/2 relative flex items-center justify-center z-10 py-[1vw] text-center text-[1vw] font-bold rounded-full text-black ${SatoshiFont.className}`}
           >
             <Image
+            draggable={false}
               className="mr-[0.6vw] w-[1.5vw]"
               src={squaresvg}
               width={0}
@@ -65,6 +66,7 @@ export default function SelectChoice() {
             className={`w-1/2 relative z-10 flex items-center justify-center py-[1vw] text-center text-[1vw] font-bold rounded-full text-black ${SatoshiFont.className}`}
           >
             <Image
+            draggable={false}
               className="mr-[0.6vw] w-[1.5vw]"
               src={mapIcon}
               width={0}

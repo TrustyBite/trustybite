@@ -82,6 +82,7 @@ export default function Cards() {
             >
               <div className="flex items-center gap-[3vw] my-2">
                 <Image
+                draggable={false}
                   className="w-[6vw]"
                   src={card.src}
                   width={0}

@@ -12,6 +12,7 @@ export default function HeroSection() {
   return (
     <div className="w-full">
       <Image
+      draggable={false}
         className="bg-no-repeat w-full bg-contain -z-10"
         src={happyfamily1}
         width={0}
@@ -26,6 +27,7 @@ export default function HeroSection() {
               className={`${SatoshiFont.className} flex text-[1vw] mb-[3%] items-center p-[0.4vw] w-[fit-content] font-medium rounded-full text-white border border-[#C6FFE9] bg-[#49FFB9]/30`}
             >
               <Image
+              draggable={false}
                 className="mr-[0.4vw] w-[2vw]"
                 src={nearLogo}
                 width={0}

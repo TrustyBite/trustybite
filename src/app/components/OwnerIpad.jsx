@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import mark from "../assets/mark.svg";
+import mark from "../assets/Mark.svg";
 import Image from "next/image";
 import ownerIpad from "@/app/assets/ownerIpad.svg";
 import {
@@ -29,6 +29,7 @@ export default function OwnerIpad() {
         <div className="my-[1vw]">
           <div className="flex items-center">
             <Image
+            draggable={false}
               className="mr-[.5vw] w-[2vw]"
               src={mark}
               width={0}
@@ -43,6 +44,7 @@ export default function OwnerIpad() {
           </div>
           <div className="flex items-center">
             <Image
+            draggable={false}
               className="mr-[.5vw] w-[2vw]"
               src={mark}
               width={0}
@@ -57,6 +59,7 @@ export default function OwnerIpad() {
           </div>
           <div className="flex items-center">
             <Image
+            draggable={false}
               className="mr-[.5vw] w-[2vw]"
               src={mark}
               width={0}
@@ -85,6 +88,7 @@ export default function OwnerIpad() {
           className="[clip-path:inset(0px_0px_0px_0px)]"
         >
           <Image
+          draggable={false}
             className="w-[40vw]"
             src={ownerIpad}
             width={0}

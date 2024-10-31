@@ -30,6 +30,7 @@ export default function LandingPage() {
           </p>
         </div>
         <Image
+        draggable={false}
           className="w-full drop-shadow-2xl"
           src={dining}
           width={0}
@@ -87,6 +88,7 @@ export default function LandingPage() {
           </Link>
           <div className="mt-[2vw] flex justify-center">
             <Image
+            draggable={false}
               className="object-cover object-[0_-7vw] h-[38vw]"
               src={earth}
               width={0}

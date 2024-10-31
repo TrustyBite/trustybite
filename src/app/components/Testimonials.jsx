@@ -151,6 +151,7 @@ export default function Testimonials() {
             >
               <div>
                 <Image
+                draggable={false}
                   className="w-[45vw] h-[17vw]"
                   src={testimonials[LeftId].src}
                   width={0}
@@ -175,6 +176,7 @@ export default function Testimonials() {
                 </div>
                 <div className="flex items-center">
                   <Image
+                  draggable={false}
                     className="mr-[1vw] w-[6vw]"
                     src={stars}
                     width={0}
@@ -203,6 +205,7 @@ export default function Testimonials() {
             >
               <div>
                 <Image
+                draggable={false}
                   className="w-[45vw] h-[17vw]"
                   src={testimonials[CenterId].src}
                   width={0}
@@ -227,6 +230,7 @@ export default function Testimonials() {
                 </div>
                 <div className="flex items-center">
                   <Image
+                  draggable={false}
                     className="mr-[1vw] w-[6vw]"
                     src={stars}
                     width={0}
@@ -256,6 +260,7 @@ export default function Testimonials() {
             >
               <div>
                 <Image
+                draggable={false}
                   className="w-[45vw] h-[17vw]"
                   src={testimonials[RightId].src}
                   width={0}
@@ -280,6 +285,7 @@ export default function Testimonials() {
                 </div>
                 <div className="flex items-center">
                   <Image
+                  draggable={false}
                     className="mr-[1vw] w-[6vw]"
                     src={stars}
                     width={0}

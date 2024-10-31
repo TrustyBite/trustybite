@@ -16,6 +16,7 @@ export default function Search() {
       <div className="border border-[#DDDDDD] flex items-center justify-between p-[1vw] bg-white rounded-full">
         <div className="rounded-full border border-[#DDDDDD] bg-white flex items-center p-[1vw] w-[22vw]">
           <Image
+          draggable={false}
             className="mr-[1vw] w-[1.5vw]"
             src={mapsvg}
             height={0}
@@ -30,6 +31,7 @@ export default function Search() {
         </div>
         <div className="rounded-full border border-[#DDDDDD] bg-white flex items-center p-[1vw] w-[18vw]">
           <Image
+          draggable={false}
             className="mr-[1vw] w-[1.5vw]"
             src={calendar}
             height={0}
@@ -44,6 +46,7 @@ export default function Search() {
         </div>
         <div className="rounded-full border border-[#DDDDDD] bg-white flex items-center justify-between p-[1vw] w-[11vw]">
           <Image
+          draggable={false}
             className="mr-[1vw] w-[1.5vw]"
             src={clock}
             height={0}
@@ -59,6 +62,7 @@ export default function Search() {
         </div>
         <div className="rounded-full border border-[#DDDDDD] bg-white flex justify-between items-center p-[1vw] w-[12vw]">
           <Image
+          draggable={false}
             className="mr-[1vw] w-[1.5vw]"
             src={usersvg}
             height={0}

@@ -84,6 +84,7 @@ export default function Restaurants() {
               >
                 <div className="relative">
                   <Image
+                  draggable={false}
                     className="w-[20vw] mb-[1vw]"
                     src={value.src}
                     width={0}
@@ -114,6 +115,7 @@ export default function Restaurants() {
                   </div>
                   <div className="flex items-center">
                     <Image
+                    draggable={false}
                       className="w-[1.5vw] mr-[0.2vw]"
                       src={star1}
                       width={0}

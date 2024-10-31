@@ -37,6 +37,7 @@ export default function Header() {
     <div className="mx-[6.5%] flex justify-between items-center">
       <div className="m-2 flex items-center">
         <Image
+        draggable={false}
           className="w-[12vw]"
           src={Logo}
           width={0}

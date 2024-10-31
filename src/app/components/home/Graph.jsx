@@ -18,6 +18,7 @@ export default function Graph() {
       <div className="overflow-hidden  w-full">
         <div className="rounded-2xl">
           <Image
+          draggable={false}
             onClick={() => setSelected(true)}
             className=" w-full h-full"
             src={graph}
@@ -28,6 +29,7 @@ export default function Graph() {
         </div>
       </div>
       <Image
+      draggable={false}
         onClick={() => setSelected(false)}
         className="absolute w-[3vw] cursor-pointer top-[20%] right-[40%]"
         src={markIcon}
@@ -44,6 +46,7 @@ export default function Graph() {
           <div className="bg-white border cursor-pointer border-[#DDDDDD] drop-shadow-xl h-[18vw] w-[fit-content] p-[0.5vw] rounded-[1vw]">
             <div className="relative">
               <Image
+              draggable={false}
                 className="w-[14vw] mb-[1vw]"
                 src={image1}
                 width={0}
@@ -69,6 +72,7 @@ export default function Graph() {
               </div>
               <div className="flex items-center">
                 <Image
+                draggable={false}
                   className="w-[1.2vw] mr-[0.2vw]"
                   src={star1}
                   width={0}

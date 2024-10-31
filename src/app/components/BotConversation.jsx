@@ -21,6 +21,7 @@ export default function BotConversation() {
     <div className="mx-[6.5%]">
       <div className="my-[8vw] relative">
         <Image
+        draggable={false}
           className="w-full"
           src={botBG}
           width={0}
@@ -59,6 +60,7 @@ export default function BotConversation() {
           viewport={{ once: true }}
         >
           <Image
+          draggable={false}
             className="w-[35vw]"
             src={botConv}
             width={0}

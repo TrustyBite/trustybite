@@ -93,6 +93,7 @@ export default function Rating() {
           </p>
           <div className="flex items-center justify-center">
             <Image
+            draggable={false}
               className="w-[1.5vw] mr-[0.2vw]"
               src={freshnesssvg}
               width={0}
@@ -114,6 +115,7 @@ export default function Rating() {
           </p>
           <div className="flex items-center justify-center">
             <Image
+            draggable={false}
               className="w-[1.5vw] mr-[0.2vw]"
               src={cleanlinesssvg}
               width={0}
@@ -135,6 +137,7 @@ export default function Rating() {
           </p>
           <div className="flex items-center justify-center">
             <Image
+            draggable={false}
               className="w-[1.5vw] mr-[0.2vw]"
               src={ratingsvg}
               width={0}
@@ -155,6 +158,7 @@ export default function Rating() {
         >
           All data verified and stored on the{" "}
           <Image
+          draggable={false}
             className="w-[3vw] mx-[0.2vw]"
             src={nearSmall}
             width={0}

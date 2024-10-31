@@ -29,6 +29,7 @@ export default function Tablette() {
           viewport={{ once: true }}
         >
           <Image
+          draggable={false}
             className="w-full"
             src={tablette}
             width={0}
