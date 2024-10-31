@@ -71,7 +71,7 @@ export default function Cards() {
               (idx + 0.7) / cards.length,
               (idx + 1.2) / cards.length, // Scale down later
             ],
-            [0.9, 1, 1, 0.9]
+            [0.9, 1.3, 1.3, 0.9]
           );
 
           return (

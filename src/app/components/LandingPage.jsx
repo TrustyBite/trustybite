@@ -11,7 +11,7 @@ import BotConversation from "./BotConversation";
 import OwnerIpad from "./OwnerIpad";
 import Testimonials from "./Testimonials";
 import { ArrowTurnDownRightIcon } from "@heroicons/react/24/outline";
-
+import Link from "next/link";
 
 export default function LandingPage() {
   return (
@@ -63,26 +63,28 @@ export default function LandingPage() {
               Join the growing network of transparent restaurants.
             </p>
           </div>
-          <div className="mt-[2vw] flex justify-center">
-            <button
-              className={`w-[13vw] h-[4vw] text-[1.5vw] p-[0.3vw] text-[#4C4C4C] ${SatoshiFont.className} font-bold flex items-center gap-2 bg-[#6BE1FF] rounded-[1vw] shadow-inner`}
-              style={{
-                boxShadow:
-                  "inset 0 0px 2px white, inset 0 0px 0px white, inset 0 -1px 1.5px #003542, inset 0 0px 0px white",
-              }}
-            >
-              <span
-                className="bg-white flex justify-center items-center w-[3.5vw] h-[3.5vw] p-1 rounded-[1vw]"
+          <Link href={"/home"}>
+            <div className="mt-[2vw] flex justify-center">
+              <button
+                className={`w-[12vw] h-[4vw] text-[1.5vw] p-[0.3vw] text-[#4C4C4C] ${SatoshiFont.className} font-bold flex items-center gap-2 bg-[#6BE1FF] rounded-[1vw] shadow-inner`}
                 style={{
                   boxShadow:
-                    "inset 0 0.3px 2px white, inset 0 0px 0px white, inset 0 -1px 1.5px #003542, inset 0 0px 0px white",
+                    "inset 0 0px 2px white, inset 0 0px 0px white, inset 0 -1px 1.5px #003542, inset 0 0px 0px white",
                 }}
               >
-                <ArrowTurnDownRightIcon className="w-[3vw]" color="#4C4C4C" />
-              </span>
-              Join Now
-            </button>
-          </div>
+                <span
+                  className="bg-white flex justify-center items-center w-[3.5vw] h-[3.5vw] p-1 rounded-[1vw]"
+                  style={{
+                    boxShadow:
+                      "inset 0 0.3px 2px white, inset 0 0px 0px white, inset 0 -1px 1.5px #003542, inset 0 0px 0px white",
+                  }}
+                >
+                  <ArrowTurnDownRightIcon className="w-[3vw]" color="#4C4C4C" />
+                </span>
+                Join Now
+              </button>
+            </div>
+          </Link>
           <div className="mt-[2vw] flex justify-center">
             <Image
               className="object-cover object-[0_-7vw] h-[38vw]"

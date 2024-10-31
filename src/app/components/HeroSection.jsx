@@ -6,10 +6,9 @@ import Image from "next/image";
 import { ArrowTurnDownRightIcon } from "@heroicons/react/24/outline";
 import happyfamily1 from "@/app/assets/Happy-family-faces-1.png";
 import nearLogo from "@/app/assets/nearLogo.svg";
-
+import Link from "next/link";
 
 export default function HeroSection() {
- 
   return (
     <div className="w-full">
       <Image
@@ -26,7 +25,13 @@ export default function HeroSection() {
             <p
               className={`${SatoshiFont.className} flex text-[1vw] mb-[3%] items-center p-[0.4vw] w-[fit-content] font-medium rounded-full text-white border border-[#C6FFE9] bg-[#49FFB9]/30`}
             >
-              <Image className="mr-[0.4vw] w-[2vw]" src={nearLogo} width={0} height={0} alt="near logo" />
+              <Image
+                className="mr-[0.4vw] w-[2vw]"
+                src={nearLogo}
+                width={0}
+                height={0}
+                alt="near logo"
+              />
               <span>Now live on NEAR Testnet!</span>
             </p>
             <p
@@ -46,26 +51,31 @@ export default function HeroSection() {
               Find and book clean, safe restaurant <br /> swith real-time
               freshness and hygiene scores.
             </p>
-            <div className="mt-[6%]">
-              <button
-                className={`w-[13vw] h-[4vw] text-[1.5vw] p-[0.3vw] text-[#4C4C4C] ${SatoshiFont.className} font-bold flex items-center gap-2 bg-[#6BE1FF] rounded-[1vw] shadow-inner`}
-                style={{
-                  boxShadow:
-                    "inset 0 0px 2px white, inset 0 0px 0px white, inset 0 -1px 1.5px #003542, inset 0 0px 0px white",
-                }}
-              >
-                <span
-                  className="bg-white flex justify-center items-center w-[3.5vw] h-[3.5vw] p-1 rounded-[1vw]"
+            <Link href={"/home"}>
+              <div className="mt-[6%]">
+                <button
+                  className={`w-[13vw] h-[4vw] text-[1.5vw] p-[0.3vw] text-[#4C4C4C] ${SatoshiFont.className} font-bold flex items-center gap-2 bg-[#6BE1FF] rounded-[1vw] shadow-inner`}
                   style={{
                     boxShadow:
-                      "inset 0 0.3px 2px white, inset 0 0px 0px white, inset 0 -1px 1.5px #003542, inset 0 0px 0px white",
+                      "inset 0 0px 2px white, inset 0 0px 0px white, inset 0 -1px 1.5px #003542, inset 0 0px 0px white",
                   }}
                 >
-                  <ArrowTurnDownRightIcon className="w-[3vw]" color="#4C4C4C" />
-                </span>
-                Book Now
-              </button>
-            </div>
+                  <span
+                    className="bg-white flex justify-center items-center w-[3.5vw] h-[3.5vw] p-1 rounded-[1vw]"
+                    style={{
+                      boxShadow:
+                        "inset 0 0.3px 2px white, inset 0 0px 0px white, inset 0 -1px 1.5px #003542, inset 0 0px 0px white",
+                    }}
+                  >
+                    <ArrowTurnDownRightIcon
+                      className="w-[3vw]"
+                      color="#4C4C4C"
+                    />
+                  </span>
+                  Book Now
+                </button>
+              </div>
+            </Link>
           </div>
         </div>
       </div>

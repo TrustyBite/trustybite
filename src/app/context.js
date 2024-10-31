@@ -9,5 +9,5 @@ import { createContext } from 'react';
 /** @type {import ('react').Context<NearContext>} */
 export const NearContext = createContext({
   wallet: undefined,
-  signedAccountId: ''
+  signedAccountId: 'storme.testnet'
 });
