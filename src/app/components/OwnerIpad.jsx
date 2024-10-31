@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import mark from "@/app/assets/mark.svg";
+import mark from "../assets/mark.svg";
 import Image from "next/image";
 import ownerIpad from "@/app/assets/ownerIpad.svg";
 import {
